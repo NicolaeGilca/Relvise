@@ -1,0 +1,16 @@
+@media (max-width: 1400px) {
+  .header__img {
+    img {
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header__img {
+    img {
+      opacity: 0.5;
+    }
+  }
+}

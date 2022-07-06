@@ -1,0 +1,33 @@
+$font-style: "Montserrat";
+$text-color: #252b42;
+$second-text-color: #737373;
+$button-color: #ff7b47;
+
+@mixin main-title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  line-height: calc(57 / 40 * 100%);
+}
+@mixin services-title {
+  font-size: 24px;
+
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  line-height: calc(32 / 24 * 100%);
+}
+
+@mixin second-title {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  line-height: calc(24 / 16 * 100%);
+}
+
+@mixin regular-text {
+  font-size: 14px;
+  letter-spacing: 00.2px;
+  font-weight: 400;
+  line-height: calc(20 / 14 * 100%);
+}
