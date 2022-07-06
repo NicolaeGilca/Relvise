@@ -1,2 +1,2 @@
 # Relvise
-WebPage [LadingPage]
+[LadingPage]
