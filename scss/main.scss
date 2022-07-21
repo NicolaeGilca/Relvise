@@ -346,3 +346,74 @@ body {
     @include regular-text();
   }
 }
+
+//clients page//
+
+.clients {
+  margin-top: 36px;
+  &__container {
+  }
+
+  &__body {
+    padding: 50px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    flex: 0 1 16%;
+    text-align: center;
+  }
+}
+
+//page subscibe
+
+.subscibe {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    max-width: 100%;
+    widows: 986px;
+    background: #17213c;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include services-title();
+    color: white;
+  }
+
+  &__form {
+    margin: 0;
+    border: #e6e6e6 solid 1px;
+    border-radius: 5px;
+  }
+
+  &__input {
+    max-width: 100%;
+    width: 450px;
+    height: 58px;
+    border-radius: 5px;
+  }
+
+  &__btn {
+    max-width: 100%;
+    width: 117px;
+    max-height: 100%;
+    height: 58px;
+    background: #ff7b47;
+    color: white;
+    border-radius: 5px;
+  }
+}
