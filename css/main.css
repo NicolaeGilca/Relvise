@@ -230,7 +230,7 @@ body {
 
 .services__description {
   font-size: 14px;
-  letter-spacing: 00.2px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   line-height: calc(20 / 14 * 100%);
 }
@@ -281,7 +281,7 @@ body {
 
 .advantages__title {
   font-size: 14px;
-  letter-spacing: 00.2px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   line-height: calc(20 / 14 * 100%);
   font-weight: 700;
@@ -303,7 +303,7 @@ body {
 .header-top__sub-title {
   display: inline-block;
   font-size: 14px;
-  letter-spacing: 00.2px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   line-height: calc(20 / 14 * 100%);
   max-width: 100%;
@@ -357,7 +357,7 @@ body {
 
 .advices__sub-title {
   font-size: 14px;
-  letter-spacing: 00.2px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   line-height: calc(20 / 14 * 100%);
   max-height: 100%;
@@ -411,7 +411,7 @@ body {
 
 .content__sub-title {
   font-size: 14px;
-  letter-spacing: 00.2px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   line-height: calc(20 / 14 * 100%);
 }
@@ -439,7 +439,7 @@ body {
 
 .items__sub-text {
   font-size: 14px;
-  letter-spacing: 00.2px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   line-height: calc(20 / 14 * 100%);
 }
@@ -473,6 +473,22 @@ body {
   text-align: center;
 }
 
+.subscibe {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.subscibe::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  background: #252b42;
+  z-index: 0;
+}
+
 .subscibe__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,6 +500,7 @@ body {
 }
 
 .subscibe__body {
+  z-index: 9;
   max-width: 100%;
   widows: 986px;
   background: #17213c;
@@ -508,25 +525,120 @@ body {
 }
 
 .subscibe__form {
-  margin: 0;
-  border: #e6e6e6 solid 1px;
-  border-radius: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .subscibe__input {
-  max-width: 100%;
-  width: 450px;
-  height: 58px;
-  border-radius: 5px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 58px;
+  border-radius: 5px 0 0px 5px;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
 }
 
 .subscibe__btn {
-  max-width: 100%;
-  width: 117px;
+  max-width: 117px;
+  width: 100%;
   max-height: 100%;
   height: 58px;
   background: #ff7b47;
   color: white;
+  border-radius: 0px 5px 5px 0;
+}
+
+.contact {
+  margin-bottom: 68px;
+}
+
+.contact__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 393px;
+  max-height: 100%;
+}
+
+.contact__item {
+  height: 333px;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 40px;
+}
+
+.contact__item > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item-contact {
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.item-contact:hover {
+  background: #252b42;
+  color: white;
+  height: 100%;
+  height: 393px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.item-contact__emails {
+  font-size: 14px;
+  line-height: calc(24 / 14 * 100%);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.item-contact__label {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  line-height: calc(24 / 16 * 100%);
+}
+
+.item-contact__button {
+  color: #ff7b47;
+  padding: 10px 20px;
+  border: 2px solid #ff7b47;
   border-radius: 5px;
+  max-width: 165px;
+  width: 100%;
+  max-height: 44px;
+  height: 100%;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  line-height: calc(20 / 14 * 100%);
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
