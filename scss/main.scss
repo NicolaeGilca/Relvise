@@ -334,10 +334,6 @@ body {
   &__item-icon {
     margin-right: 20px;
   }
-
-  &__content {
-  }
-
   &__text {
     @include second-title();
   }
@@ -466,13 +462,10 @@ body {
 
   &:hover {
     background: #252b42;
-
     color: white;
     height: 100%;
     height: 393px;
     transition: 200ms ease-in-out;
-  }
-  &__icon {
   }
 
   &__emails {
@@ -480,9 +473,6 @@ body {
     line-height: calc(24 / 14 * 100%);
     font-weight: 600;
     letter-spacing: 0.2px;
-  }
-
-  &__link {
   }
 
   &__label {
@@ -502,3 +492,42 @@ body {
     font-weight: 600;
   }
 }
+
+//** Consulting Section
+
+.consulting {
+  padding: 40px 0;
+  background: white;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+  }
+
+  &__title {
+    @include services-title();
+  }
+
+  &__sub-text {
+    @include regular-text();
+  }
+
+  &__btn {
+    padding: 15px 40px;
+    color: white;
+    background: #ff7b47;
+    @include regular-text();
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    &:hover {
+      background-color: #eb591f;
+      transition: 200ms ease-in-out;
+    }
+  }
+}
+
+//* Footer Section

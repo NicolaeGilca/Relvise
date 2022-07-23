@@ -641,4 +641,53 @@ body {
   line-height: calc(20 / 14 * 100%);
   font-weight: 600;
 }
+
+.consulting {
+  padding: 40px 0;
+  background: white;
+}
+
+.consulting__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.consulting__title {
+  font-size: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  line-height: calc(32 / 24 * 100%);
+}
+
+.consulting__sub-text {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  line-height: calc(20 / 14 * 100%);
+}
+
+.consulting__btn {
+  padding: 15px 40px;
+  color: white;
+  background: #ff7b47;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  line-height: calc(20 / 14 * 100%);
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.consulting__btn:hover {
+  background-color: #eb591f;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
 /*# sourceMappingURL=main.css.map */
