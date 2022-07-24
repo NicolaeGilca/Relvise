@@ -251,9 +251,6 @@ body {
   padding: 45px 0;
 }
 .advices {
-  &__body {
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
@@ -347,8 +344,6 @@ body {
 
 .clients {
   margin-top: 36px;
-  &__container {
-  }
 
   &__body {
     padding: 50px 0;
@@ -503,9 +498,6 @@ body {
     justify-content: space-between;
   }
 
-  &__description {
-  }
-
   &__title {
     @include services-title();
   }
@@ -531,3 +523,65 @@ body {
 }
 
 //* Footer Section
+
+.footer {
+  background: #17213c;
+  color: white;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+  &__label {
+    padding-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    line-height: calc(24 / 16 * 100%);
+  }
+
+  .menu-footer {
+    &__link {
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-weight: 600;
+      line-height: calc(20 / 14 * 100%);
+    }
+    &__list > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.footer {
+  &__bottom {
+    padding: 25px 0;
+    background-color: white;
+    color: #737373;
+  }
+
+  &__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__allright {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    line-height: calc(20 / 14 * 100%);
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    width: 236px;
+  }
+  i {
+    margin-right: 5px;
+    font-size: 23px;
+  }
+}
